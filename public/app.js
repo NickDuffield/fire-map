@@ -9,6 +9,10 @@
     storageBucket: "",
     messagingSenderId: "288074650901"
   };
-  firebase.initializeApp(config);  
+  firebase.initializeApp(config);
+
+  var mySpots = firebase.database().ref().child('spots');
+
+  mySpots.on('value', snap => console.log(snap.val()));  
 
 }());
