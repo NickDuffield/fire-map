@@ -1,4 +1,14 @@
+var firstSpot;
+
+function myFunction(){
+  console.log(firstSpot);
+
+};
+
+
 (function(){
+
+
 
   // Initialize Firebase
   var config = {
@@ -11,8 +21,20 @@
   };
   firebase.initializeApp(config);
 
-  var mySpots = firebase.database().ref().child('spots');
+  //MY CLUE FOR READING DATA MAY BE HERE
+  //https://firebase.google.com/docs/database/web/read-and-write
 
-  mySpots.on('value', snap => console.log(snap.val()));  
+  var mySpots = firebase.database().ref().child('spots').child('spot-1').getValue();
+
+  //mySpots.on('value', snap => console.log(snap.val()));
+
+  mySpots.on('value', snap => {
+    var testSnap = snap.val();
+    firstSpot = testSnap
+
+    myFunction();
+
+  });
+
 
 }());
