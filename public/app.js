@@ -1,16 +1,16 @@
-var firstSpot;
+//var uk;
 
-function myFunction(){
-  console.log(firstSpot);
+var map;
 
-};
+var options = {
+    center:{lat:52.2053,lng:0.1218},
+    zoom:6,
+    mapTypeId:'roadmap'
+}
 
+function setupData() {
+  //console.log('working');
 
-(function(){
-
-
-
-  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDupH5-oRofLqaP0M3PbDcXzd-e_yjAEow",
     authDomain: "fire-map-16163.firebaseapp.com",
@@ -20,21 +20,29 @@ function myFunction(){
     messagingSenderId: "288074650901"
   };
   firebase.initializeApp(config);
+  database = firebase.database();
 
-  //MY CLUE FOR READING DATA MAY BE HERE
-  //https://firebase.google.com/docs/database/web/read-and-write
+  var ref = database.ref('spots');
+  ref.on('value', gotData, errData);
 
-  var mySpots = firebase.database().ref().child('spots').child('spot-1').getValue();
+};
 
-  //mySpots.on('value', snap => console.log(snap.val()));
+function gotData(data) {
+  console.log(data);
+};
 
-  mySpots.on('value', snap => {
-    var testSnap = snap.val();
-    firstSpot = testSnap
-
-    myFunction();
-
-  });
+function errData(data) {
+  console.log('Error!');
+  console.log(err);
+};
 
 
-}());
+
+function initMap() {
+
+  var setMap = new google.maps.Map(document.getElementById('map'), options);
+  map = setMap;
+
+  setupData();
+
+}
