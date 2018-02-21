@@ -40,7 +40,8 @@ function gotData(data) {
     var imageUrl = spots[props].imageUrl;
 
     //NEED TO FIX THIS VARIABLE. Look into concatination for javascript variables
-    var infoWinDetails = spots[props].infoWinDetails;
+    //var infoWinDetails = spots[props].infoWinDetails;
+    var infoWinDetails = '<div class="map-spot-marker-title">Orchard Park Skatepark</div>'+'<button type="button" onclick="showSpotDetails()">Show details</button>';
     var coords = spots[props].coords;
 
     //add marker
