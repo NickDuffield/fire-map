@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>report</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-80.000000, -80.000000)">
+            <g id="report" transform="translate(80.000000, 80.000000)">
+                <polygon id="Shape" fill="#D0021B" points="12.7 0 5.3 0 0 5.3 0 12.8 5.3 18 12.8 18 18.1 12.7 18.1 5.3"></polygon>
+                <path d="M9,14.3 C8.3,14.3 7.7,13.7 7.7,13 C7.7,12.3 8.3,11.7 9,11.7 C9.7,11.7 10.3,12.3 10.3,13 C10.3,13.7 9.7,14.3 9,14.3 L9,14.3 Z" id="Path" fill="#FFFFFF"></path>
+                <polygon id="Path" fill="#FFFFFF" points="10 10 8 10 8 4 10 4"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

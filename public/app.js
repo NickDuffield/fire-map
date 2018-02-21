@@ -20,30 +20,72 @@
 
 }());
 
+//global var for display panels
+var spotInfo;
+
 function gotData(data) {
-  //useful technique for creating an array
+  //reference to database objects
   var spots = data.val();
+  //useful technique for creating an array
   var keys = Object.keys(spots);
-  var i = 0;
-  var k = keys[i];
-  var coords = spots[k].coords;
 
-  //addPin(coords);
-  var marker = new google.maps.Marker({
-    position: coords,
-    map: map
-  });
+  //infowindow and marker setup
+	var infowindow = new google.maps.InfoWindow();
 
-  //console.log(spots);
+  //creates and adds markers to map
+  function addMarkers(props) {
+    //poperty values
+    var spotName = spots[props].spotName;
+    var iconImg = spots[props].iconImg;
+    var imageUrl = spots[props].imageUrl;
 
-  //loop for adding multiple pins. check skatespotter for this function
-  /*for (var i = 0; i < keys.length; i++) {
-    var k = keys[i];
-    var name = spots[k].name;
-    var score = spots[k].score;
-    var coords = spots[k].coords;
-    console.log(coords)
-  }*/
+    //NEED TO FIX THIS VARIABLE. Look into concatination for javascript variables
+    var infoWinDetails = spots[props].infoWinDetails;
+    var coords = spots[props].coords;
+
+    //add marker
+    var marker = new google.maps.Marker({
+      position: coords,
+      map: map
+    });
+
+    //check for marker image
+    if(iconImg){
+        marker.setIcon(iconImg);
+    }
+
+    //check for no name.
+    if(spotName === undefined) {
+        spotName = 'No name'
+    }
+
+    //console.log(infoWinDetails)
+
+
+    //add event listener to marker
+    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        return function () {
+
+            //set info window content
+            if(infoWinDetails){
+                infowindow.setContent(infoWinDetails);
+            }
+
+            //open infowindow
+            infowindow.open(map, marker);
+
+            //captures new details to update the panel
+            spotInfo = props;
+
+        }
+    })(marker, i));
+
+  }
+
+  //loop for adding multiple pins
+  for (i = 0; i < keys.length; i++) {
+    addMarkers(keys[i]);
+  }
 
 };
 
