@@ -34,14 +34,14 @@ function gotData(data) {
     map: map
   });
 
-  console.log(spots);
+  //console.log(spots);
 
-  //loop for adding multiple pins. check tutorial for adding
+  //loop for adding multiple pins. check skatespotter for this function
   /*for (var i = 0; i < keys.length; i++) {
     var k = keys[i];
-    var name = scores[k].name;
-    var score = scores[k].score;
-    var coords = scores[k].coords;
+    var name = spots[k].name;
+    var score = spots[k].score;
+    var coords = spots[k].coords;
     console.log(coords)
   }*/
 
