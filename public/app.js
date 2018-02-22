@@ -34,14 +34,11 @@ function gotData(data) {
 
   //creates and adds markers to map
   function addMarkers(props) {
+
     //poperty values
     var spotName = spots[props].spotName;
     var iconImg = spots[props].iconImg;
     var imageUrl = spots[props].imageUrl;
-
-    //NEED TO FIX THIS VARIABLE. Look into concatination for javascript variables
-    //var infoWinDetails = spots[props].infoWinDetails;
-    var infoWinDetails = '<div class="map-spot-marker-title">Orchard Park Skatepark</div>'+'<button type="button" onclick="showSpotDetails()">Show details</button>';
     var coords = spots[props].coords;
 
     //add marker
@@ -55,13 +52,13 @@ function gotData(data) {
         marker.setIcon(iconImg);
     }
 
-    //check for no name.
+    //check for no name
     if(spotName === undefined) {
         spotName = 'No name'
     }
 
-    //console.log(infoWinDetails)
-
+    //construct infowindow
+    var infoWinDetails = '<div class="map-spot-marker-title">'+spotName+'</div>'+'<button type="button" onclick="showSpotDetails()">Show details</button>';
 
     //add event listener to marker
     google.maps.event.addListener(marker, 'click', (function (marker, i) {
