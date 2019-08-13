@@ -1,0 +1,79 @@
+[debug] [2019-08-13T15:02:31.410Z] ----------------------------------------------------------------------
+[debug] [2019-08-13T15:02:31.412Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-13T15:02:31.412Z] CLI Version:   7.2.2
+[debug] [2019-08-13T15:02:31.413Z] Platform:      darwin
+[debug] [2019-08-13T15:02:31.413Z] Node Version:  v10.15.3
+[debug] [2019-08-13T15:02:31.413Z] Time:          Tue Aug 13 2019 16:02:31 GMT+0100 (British Summer Time)
+[debug] [2019-08-13T15:02:31.413Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-13T15:02:31.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-13T15:02:31.424Z] > authorizing via signed-in user
+[debug] [2019-08-13T15:02:31.424Z] [iam] checking project fire-map-16163 for permissions ["firebase.projects.get"]
+[debug] [2019-08-13T15:02:31.426Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-13T15:02:31.426Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-13T15:02:31.597Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-13T15:02:31.606Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-map-16163:testIamPermissions  
+
+[debug] [2019-08-13T15:02:32.324Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-13T15:02:32.326Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163  
+ 
+[debug] [2019-08-13T15:02:32.569Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Nick/Desktop/repos/fire-map'...
+[info] 
+[debug] [2019-08-13T15:02:32.572Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163/webApps/-/config  
+ 
+[debug] [2019-08-13T15:02:32.854Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-08-13T15:05:05.416Z] ----------------------------------------------------------------------
+[debug] [2019-08-13T15:05:05.418Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-13T15:05:05.418Z] CLI Version:   7.2.2
+[debug] [2019-08-13T15:05:05.418Z] Platform:      darwin
+[debug] [2019-08-13T15:05:05.418Z] Node Version:  v10.15.3
+[debug] [2019-08-13T15:05:05.419Z] Time:          Tue Aug 13 2019 16:05:05 GMT+0100 (British Summer Time)
+[debug] [2019-08-13T15:05:05.419Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-13T15:05:05.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-13T15:05:05.427Z] > authorizing via signed-in user
+[debug] [2019-08-13T15:05:05.427Z] [iam] checking project fire-map-16163 for permissions ["firebase.projects.get"]
+[debug] [2019-08-13T15:05:05.431Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-map-16163:testIamPermissions  
+
+[debug] [2019-08-13T15:05:06.474Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-13T15:05:06.477Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163  
+ 
+[debug] [2019-08-13T15:05:06.719Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Nick/Desktop/repos/fire-map'...
+[info] 
+[debug] [2019-08-13T15:05:06.724Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163/webApps/-/config  
+ 
+[debug] [2019-08-13T15:05:07.086Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-08-13T15:13:21.875Z] ----------------------------------------------------------------------
+[debug] [2019-08-13T15:13:21.877Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-13T15:13:21.877Z] CLI Version:   7.2.2
+[debug] [2019-08-13T15:13:21.877Z] Platform:      darwin
+[debug] [2019-08-13T15:13:21.877Z] Node Version:  v10.15.3
+[debug] [2019-08-13T15:13:21.878Z] Time:          Tue Aug 13 2019 16:13:21 GMT+0100 (British Summer Time)
+[debug] [2019-08-13T15:13:21.878Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-13T15:13:21.886Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-13T15:13:21.886Z] > authorizing via signed-in user
+[debug] [2019-08-13T15:13:21.886Z] [iam] checking project fire-map-16163 for permissions ["firebase.projects.get"]
+[debug] [2019-08-13T15:13:21.891Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-map-16163:testIamPermissions  
+
+[debug] [2019-08-13T15:13:23.838Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-13T15:13:23.840Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163  
+ 
+[debug] [2019-08-13T15:13:24.052Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Nick/Desktop/repos/fire-map'...
+[info] 
+[debug] [2019-08-13T15:13:24.056Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-map-16163/webApps/-/config  
+ 
+[debug] [2019-08-13T15:13:24.333Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
